@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="static/css/style.css" />
+  <script src="static/js/overlay.js"></script>
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="ilovedivs">
+    <h1 class="blackmagic">a</h1>
+    <div
+      style="
+        width: 50vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #0b0c10;
+        margin-top: 25vh;
+        margin-bottom: auto;
+        height: 50vh;
+        border-radius: 20px;
+      "
+    >
+      <div class="overlay displaynone" id="settingsov">
+        <div class="overlaybutcolouredagain">
+          <a id="back">
+            <div class="settingsbutton">
+              <h1 class="titletext">back</h1>
+            </div>
+          </a>
+          <a href="/logout">
+            <div class="settingsbutton1">
+              <h1 class="titletext">sign out</h1>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="lefttorightbox">
+        <span class="leftbox">
+          <a href="messages1.html">
+            <div class="leftboxbox">
+              <div class="h40">
+                <h1 class="titletext">Chat 1</h1>
+              </div>
+              <div class="textprvbox">
+                <span class="miniishtext">{{ latest_messages[1] }}</span>
+              </div>
+            </div>
+          </a>
+        </span>
+
+        <span class="rightbox">
+          <div class="rightboxbox">
+            <h1 class="titletextbutAAA">Welcome, {{ session.get('username', 'Guest') }}</h1>
+          </div>
+          <div class="backgroundrightboxbox">
+            <a href="https://genshin.hoyoverse.com/en/">
+              <h1 class="titletext">Gacha</h1>
+            </a>
+          </div>
+          <div class="noflex">
+            <span class="paywallleft">
+              <!-- not a reall paywall-->
+              <a id="settings"> <h1 class="miniishtext">⚙️ settings</h1></a>
+            </span>
+            <span class="paywall">
+              <a href="https://buymeacoffee.com/timmytam"
+                <h1 class="miniishtext">☕️ buy me a coffee</h1></a
+              >
+            </span>
+          </div>
+        </span>
+      </div>
+      <!-- hi sir this code was written basically when im asleep so this thing is gonna be so unoptimised but i really dont want to fix it sorry!-->
+      <div class="lefttorightbox" >
+        <span class="leftbox">
+          <a href="messages2.html">
+            <div class="leftboxbox">
+              <div class="h40">
+                <h1 class="titletext">Chat 2</h1>
+              </div>
+              <div class="textprvbox">
+                <span class="miniishtext">{{ latest_messages[2] }}</span>
+              </div>
+            </div>
+          </a>
+        </span>
+
+        <span class="rightbox">
+          <a href="messages3.html">
+            <div class="leftboxbox">
+              <div class="h40">
+                <h1 class="titletext">Chat 3</h1>
+              </div>
+              <div class="textprvbox">
+                <span class="miniishtext">{{ latest_messages[3] }}</span>
+              </div>
+            </div>
+          </a>
+        </span>
+      </div>
+    </div>
+  </div>
+</body>
+<!---
+<body>
+  <div class="ilovedivs">
+    <h1 class="blackmagic">a</h1>
+    <div
+      style="
+        width: 50vw;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #0b0c10;
+        margin-top: 25vh;
+        margin-bottom: auto;
+        height: 50vh;
+        border-radius: 20px;
+      "
+    >
+
+      
+    </div>
+  </div>
+</body>
+-->
+</html>
